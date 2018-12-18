@@ -29,14 +29,7 @@ import com.foodsoul.presentation.base.view.shadowRoundedView.ShadowType.LAST
 import com.foodsoul.presentation.base.view.shadowRoundedView.ShadowType.NONE
 import kotlin.math.roundToInt
 
-object FSDrawableUtil {
-
-    fun getDialogBackground(context: Context) = GradientDrawable().apply {
-        setColor(context.getColorCompatAttr(R.attr.colorBackground))
-        shape = GradientDrawable.RECTANGLE
-        cornerRadius = context.getDimensionPixel(R.dimen.menu_radius).toFloat()
-    }
-
+object DrawableUtil {
     private val shadowPadding by lazy { getDimensionPixel(R.dimen.shadow_content_padding) }
 
     fun getCircleShadowBackground(context: Context): Drawable {
